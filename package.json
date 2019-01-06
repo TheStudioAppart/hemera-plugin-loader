@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test2": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha test/index.js"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,8 @@
     "hemera-sql-store": "^7.0.0",
     "nats": "^1.2.2",
     "nats-hemera": "^6.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
   }
 }

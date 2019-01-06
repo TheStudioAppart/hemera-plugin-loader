@@ -21,18 +21,18 @@ module.exports = class Loader {
         this.__plugin__(this.config.plugins);
     }
 
-    async __test__() {
-        try {
-            let r = await this.hemera.act({ topic: 'plugin1', cmd: 'create' })
-            let r2 = await this.hemera.act({ topic: 'plugin2', cmd: 'remove' })
-            let r3 = await this.hemera.act({ topic: 'plugin2', cmd: 'create' })
+    // async __test__() {
+    //     try {
+    //         let r = await this.hemera.act({ topic: 'plugin1', cmd: 'create' })
+    //         let r2 = await this.hemera.act({ topic: 'plugin2', cmd: 'remove' })
+    //         let r3 = await this.hemera.act({ topic: 'plugin2', cmd: 'create' })
             
-            console.log('res', r.data, r2.data, r3.data);
-        }
-        catch (e) {
-            console.log('error', e)
-        }
-    }
+    //         console.log('res', r.data, r2.data, r3.data);
+    //     }
+    //     catch (e) {
+    //         console.log('error', e)
+    //     }
+    // }
 
     __require__(extensions) {
         extensions.forEach(ext => {
@@ -76,7 +76,7 @@ module.exports = class Loader {
             .ready()
             .then(() => {
                 console.log(`${name} service listening...`)
-                this.__test__();
+                // this.__test__();
             })
             .catch((err) => console.error(err, `${name} service error!`));
     }

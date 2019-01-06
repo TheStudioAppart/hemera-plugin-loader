@@ -15,3 +15,5 @@ declare namespace Loader {
     
     }
 }
+
+/* Nothing at the moment,  I try to figure out how to define a fucking linked .ts interface */

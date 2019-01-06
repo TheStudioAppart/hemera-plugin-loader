@@ -1,0 +1,7 @@
+node_modules/
+.vscode/
+plugin1
+plugin2
+config.sample.json
+package-lock.json
+example.js
